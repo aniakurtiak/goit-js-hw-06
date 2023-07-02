@@ -9,6 +9,10 @@ function handlerSubmit(evt) {
         email: email.value,
         password: password.value
     }
-    console.log(data);
-// Доробити alert та reset
+    if (!(email.value) || !(password.value)) {
+        alert('Всі поля повинні бути заповнені!')
+    } else {
+console.log(data);
+    }
+    evt.currentTarget.reset();
 };
